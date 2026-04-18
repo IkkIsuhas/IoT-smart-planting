@@ -1,0 +1,2 @@
+MQTT : mosquitto_pub -d -q 1 -h mqtt.thingsboard.cloud -p 1883 -t v1/devices/me/telemetry -u "fPswlnebLOEvrRu8zSeH" -m "{temperature:25}"
+HTTP : curl -v -X POST http://thingsboard.cloud/api/v1/fPswlnebLOEvrRu8zSeH/telemetry --header Content-Type:application/json --data "{temperature:25}"
